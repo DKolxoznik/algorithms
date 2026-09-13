@@ -1,0 +1,26 @@
+target/
+out/
+*.class
+
+### IntelliJ IDEA ###
+.idea/workspace.xml
+.idea/shelf/
+.idea/httpRequests/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/queries/
+*.iws
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+
+### OS / editors ###
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
