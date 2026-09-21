@@ -15,4 +15,14 @@ class CountSubarraysWithSumTest {
     void zerosAndNegatives() {
         assertEquals(3, CountSubarraysWithSum.count(new int[]{1, -1, 0}, 0));
     }
+
+    @Test
+    void noMatches() {
+        assertEquals(0, CountSubarraysWithSum.count(new int[]{1, 2, 3}, 7));
+    }
+
+    @Test
+    void wholeArray() {
+        assertEquals(1, CountSubarraysWithSum.count(new int[]{1, 2, 3}, 6));
+    }
 }

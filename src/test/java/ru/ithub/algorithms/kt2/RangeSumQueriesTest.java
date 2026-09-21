@@ -20,4 +20,9 @@ class RangeSumQueriesTest {
     void negativeNumbers() {
         assertEquals(-3, RangeSumQueries.answer(new int[]{-1, -2, 5}, new int[][]{{0, 1}})[0]);
     }
+
+    @Test
+    void singleElement() {
+        assertEquals(9, RangeSumQueries.answer(new int[]{9}, new int[][]{{0, 0}})[0]);
+    }
 }

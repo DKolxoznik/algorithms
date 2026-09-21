@@ -30,4 +30,9 @@ class SearchInsertPositionTest {
     void emptyArray() {
         assertEquals(0, SearchInsertPosition.findIndex(new int[]{}, 1));
     }
+
+    @Test
+    void insertAtTheStart() {
+        assertEquals(0, SearchInsertPosition.findIndex(new int[]{1, 3, 5, 6}, 0));
+    }
 }
