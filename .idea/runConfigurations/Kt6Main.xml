@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Kt6Main" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ru.ithub.algorithms.kt6.Kt6Main" />
+    <module name="algorithms" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,15 +1,14 @@
-# КТ№1–КТ№5 — практикум по алгоритмам
+# КТ№1–КТ№6 — практикум по алгоритмам
 
-Решения пяти контрольных точек. Проект рассчитан на **IntelliJ IDEA** (JDK 21).
+Решения шести контрольных точек. Проект рассчитан на **IntelliJ IDEA** (JDK 21).
 
 ## Как открыть в IntelliJ IDEA
 
-1. `File` → `Open...`
-2. Выберите папку `algorithms` (ту, где лежит `pom.xml`)
-3. Дождитесь импорта Maven → **Load**
-4. SDK: `ms-21` / любой JDK 21
+1. `File` → `Open...` → папка `algorithms`
+2. Импорт Maven → **Load**
+3. SDK: `ms-21` / JDK 21
 
-Конфигурации: **Main**, **Kt2Main**, **Kt3Main**, **Kt4Main**, **Kt5Main**, **All Tests**.
+Конфигурации: **Main**, **Kt2Main** … **Kt6Main**, **All Tests**.
 
 ```bash
 mvnw.cmd test
@@ -17,24 +16,21 @@ mvnw.cmd test
 
 ## Ветки
 
-| Ветка | Содержимое |
-|---|---|
-| `main` / `develop` | актуальный код |
-| `kt1` … `kt5` | накопление по контрольным точкам |
+`main` / `develop` — актуальный код; `kt1` … `kt6` — по контрольным точкам.
 
-## КТ№5 (`ru.ithub.algorithms.kt5`)
+## КТ№6 (`ru.ithub.algorithms.kt6`)
 
 | № | Класс | Суть | Сложность |
 |---|---|---|---|
-| 1 | `GenerateParentheses` | Все правильные скобочные последовательности | O(C_n · n) |
-| 2 | `PrefixDictionary` | ADD / REMOVE / COUNT prefix | Trie O(L) |
-| 3 | `TwoSingleNumbers` | Два числа, встретившиеся по одному разу | O(n), XOR |
-| 4 | `NQueensCount` | Число расстановок n ферзей с запретами | бэктрекинг, n ≤ 14 |
-| 5 | `OrderedPrefixDictionary` | ADD / REMOVE / KTH prefix k | Trie + размеры |
-| 6 | `MaxXorSubarray` | Макс. XOR на подмассиве | Trie O(n · 30) |
+| 1 | `ReverseLinkedList` | Разворот односвязного списка | O(n), O(1) память |
+| 2 | `ConnectivityQueries` | Связность станций | DSU |
+| 3 | `LexicographicTopoSort` | Лекс. наименьший топопорядок | Кан + min-heap |
+| 4 | `ReverseKGroup` | Разворот блоков по k | O(n), O(1) память |
+| 5 | `BipartiteConstraints` | Две группы same/different | DSU с чётностью |
+| 6 | `AlienDictionary` | Порядок букв по отсортированным словам | граф + топосорт |
 
-Запуск примеров: `ru.ithub.algorithms.kt5.Kt5Main`.
+Запуск примеров: `ru.ithub.algorithms.kt6.Kt6Main`.
 
-## КТ№1–КТ№4
+## КТ№1–КТ№5
 
-Кратко: массивы/окна (КТ1), бинарный поиск и интервалы (КТ2), графы/стеки (КТ3), деревья и медианы (КТ4). Подробности — в пакетах `kt2`–`kt4` и классах верхнего уровня.
+Пакеты `kt2`–`kt5` и классы верхнего уровня — предыдущие контрольные точки (массивы, поиск, графы, деревья, trie/XOR).
