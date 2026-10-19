@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Kt5Main" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ru.ithub.algorithms.kt5.Kt5Main" />
+    <module name="algorithms" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
