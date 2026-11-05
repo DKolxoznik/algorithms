@@ -1,6 +1,6 @@
-# КТ№1–КТ№8 — практикум по алгоритмам
+# КТ№1–КТ№9 — практикум по алгоритмам
 
-Решения восьми контрольных точек. Проект рассчитан на **IntelliJ IDEA** (JDK 21).
+Решения девяти контрольных точек. Проект рассчитан на **IntelliJ IDEA** (JDK 21).
 
 ## Как открыть в IntelliJ IDEA
 
@@ -8,7 +8,7 @@
 2. Импорт Maven → **Load**
 3. SDK: `ms-21` / JDK 21
 
-Конфигурации: **Main**, **Kt2Main** … **Kt8Main**, **All Tests**.
+Конфигурации: **Main**, **Kt2Main** … **Kt9Main**, **All Tests**.
 
 ```bash
 mvnw.cmd test
@@ -16,21 +16,21 @@ mvnw.cmd test
 
 ## Ветки
 
-`main` / `develop` — актуальный код; `kt1` … `kt8` — по контрольным точкам.
+`main` / `develop` — актуальный код; `kt1` … `kt9` — по контрольным точкам.
 
-## КТ№8 (`ru.ithub.algorithms.kt8`)
+## КТ№9 (`ru.ithub.algorithms.kt9`)
 
 | № | Класс | Суть | Алгоритм |
 |---|---|---|---|
-| 1 | `MinPlatformCost` | Мин. стоимость пути по платформам | DP O(n) |
-| 2 | `ZeroOneKnapsack` | Рюкзак 0/1 | DP O(n·W) |
-| 3 | `LongestCommonSubsequence` | Длина НОП | DP O(n·m) |
-| 4 | `UnboundedKnapsackExact` | Неогр. рюкзак, масса ровно C | DP O(n·C) |
-| 5 | `LisCount` | Длина НВП + число | дерево отрезков O(n log n) |
-| 6 | `ShortestCommonSupersequence` | Кратчайшая общая суперпоследовательность | DP + жадная сборка |
+| 1 | `MinPalindromePartitions` | Мин. число палиндромных частей | DP O(n²) |
+| 2 | `GridPathsCount` | Число путей вправо/вниз | DP O(n·m) |
+| 3 | `MaxIndependentSetTree` | Макс. независимое множество | Tree DP O(n) |
+| 4 | `MinMergeCost` | Мин. стоимость слияния групп | DP O(n³) |
+| 5 | `MaxPathWithScreens` | Макс. путь с k экранами | DP O(n·m·k) |
+| 6 | `MaxConnectedSubsetK` | Макс. связное подмножество размера k | Tree knapsack O(n·k²) |
 
-Запуск примеров: `ru.ithub.algorithms.kt8.Kt8Main`.
+Запуск примеров: `ru.ithub.algorithms.kt9.Kt9Main`.
 
-## КТ№1–КТ№7
+## КТ№1–КТ№8
 
-Пакеты `kt2`–`kt7` и классы верхнего уровня — предыдущие контрольные точки.
+Пакеты `kt2`–`kt8` и классы верхнего уровня — предыдущие контрольные точки.
